@@ -1,0 +1,87 @@
+/* Center the container vertically and horizontally */
+.container {
+    position: relative; /* Required for absolute positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+/* Style for the box containing the counter */
+.box {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    overflow: hidden;
+}
+
+/* Hover effect for the box */
+.box:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Styling for the heading */
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Styling for the counter */
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Flex container for the buttons */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Styling for the increment and decrement buttons */
+.btn {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the buttons */
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Styling for the reset button */
+.reset {
+    position: absolute;
+    top:100px;
+    right: 20px; /* Adjust as needed */
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the reset button */
+.reset:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
